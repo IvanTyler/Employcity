@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/public/css/main.css">
+    <script defer src="/src/public/js/aplication.js"></script>
     <title>Employcity</title>
 </head>
 
@@ -69,8 +70,8 @@
         </section>
 
         <section class="section-checkout">
-            <div class="container">
-                <h2 class="section-checkout__title">оформление заказа</h2>
+            <div class="container container-checkout">
+                <h2 class="section-checkout__title">оформление <span class="highlighted-text-blue">заказа</span></h2>
 
                 <h4 class="section-checkout__sub-title">
                     Перед заполнением формы ознакомьтесь с нашей схемой работы!
@@ -78,45 +79,83 @@
 
                 <ul class="scheme-work-list">
                     <li class="scheme-work-list__item">
-                        <div class="circle">
-                            <img src="/src/public/icon/icon-scheme-work/icon-scheme-work-dolor-sit-amet.svg" alt=""
-                                class="icon-scheme">
+                        <div class="wrapper-circle">
+                            <div class="circle">
+                                <img src="/src/public/icon/icon-scheme-work/icon-scheme-work-сonsecteturadipiscing-elit.svg"
+                                    alt="" class="icon-scheme">
+                            </div>
+                            <ul class="ellipsis">
+                                <li class="ellipsis__item"></li>
+                                <li class="ellipsis__item"></li>
+                                <li class="ellipsis__item"></li>
+                                <li class="ellipsis__item"></li>
+                                <li class="ellipsis__item"></li>
+                            </ul>
                         </div>
                         <div class="description-work-scheme">
                             Lorem ipsum dolor sit amet
                         </div>
                     </li>
                     <li class="scheme-work-list__item">
-                        <div class="circle">
-                            <img src="/src/public/icon/icon-scheme-work/icon-scheme-work-сonsecteturadipiscing-elit.svg"
-                                alt="" class="icon-scheme">
+                        <div class="wrapper-circle">
+                            <div class="circle">
+                                <img src="/src/public/icon/icon-scheme-work/icon-scheme-work-dolor-sit-amet.svg" alt=""
+                                    class="icon-scheme">
+                            </div>
+                            <ul class="ellipsis">
+                                <li class="ellipsis__item"></li>
+                                <li class="ellipsis__item"></li>
+                                <li class="ellipsis__item"></li>
+                                <li class="ellipsis__item"></li>
+                                <li class="ellipsis__item"></li>
+                            </ul>
                         </div>
                         <div class="description-work-scheme">
                             Сonsecteturadipiscing elit
                         </div>
                     </li>
                     <li class="scheme-work-list__item">
-                        <div class="circle">
-                            <img src="/src/public/icon/icon-scheme-work/icon-scheme-work-Sed-do-eiusmod-tempor.svg"
-                                alt="" class="icon-scheme">
+                        <div class="wrapper-circle">
+                            <div class="circle">
+                                <img src="/src/public/icon/icon-scheme-work/icon-scheme-work-Sed-do-eiusmod-tempor.svg"
+                                    alt="" class="icon-scheme">
+                            </div>
+                            <ul class="ellipsis">
+                                <li class="ellipsis__item"></li>
+                                <li class="ellipsis__item"></li>
+                                <li class="ellipsis__item"></li>
+                                <li class="ellipsis__item"></li>
+                                <li class="ellipsis__item"></li>
+                            </ul>
                         </div>
                         <div class="description-work-scheme">
                             Sed do eiusmod tempor
                         </div>
                     </li>
                     <li class="scheme-work-list__item">
-                        <div class="circle">
-                            <img src="/src/public/icon/icon-scheme-work/icon-scheme-work-esse-cillum-dolore-fugiat.svg"
-                                alt="" class="icon-scheme">
+                        <div class="wrapper-circle">
+                            <div class="circle">
+                                <img src="/src/public/icon/icon-scheme-work/icon-scheme-work-esse-cillum-dolore-fugiat.svg"
+                                    alt="" class="icon-scheme">
+                            </div>
+                            <ul class="ellipsis">
+                                <li class="ellipsis__item"></li>
+                                <li class="ellipsis__item"></li>
+                                <li class="ellipsis__item"></li>
+                                <li class="ellipsis__item"></li>
+                                <li class="ellipsis__item"></li>
+                            </ul>
                         </div>
                         <div class="description-work-scheme">
                             Esse cillum dolore eu fugiat
                         </div>
                     </li>
                     <li class="scheme-work-list__item">
-                        <div class="circle">
-                            <img src="/src/public/icon/icon-scheme-work/icon-scheme-work-excepteur-sint-occaecat-cupidatat-non-proident.svg"
-                                alt="" class="icon-scheme">
+                        <div class="wrapper-circle">
+                            <div class="circle">
+                                <img src="/src/public/icon/icon-scheme-work/icon-scheme-work-excepteur-sint-occaecat-cupidatat-non-proident.svg"
+                                    alt="" class="icon-scheme">
+                            </div>
                         </div>
                         <div class="description-work-scheme">
                             Excepteur sint occaecat cupidatat non proident
@@ -126,9 +165,12 @@
 
                 <form action="" class="form-checkout">
                     <div class="form-checkout-top">
-                        <div class="form-checkout-top__select-type-system">Выберите тип системы</div>
-                        <input class="form-checkout-top__email" type="email" name="email" placeholder="Ваш e-mail">
-                        <input class="form-checkout-top__name" type="text" name="name" placeholder="Ваше имя">
+                        <div class="form-checkout-top__item select-type-system">
+                            <span class="select-type-system__type">Выберите тип системы</span>
+                            <ul class="select-type-system-list"></ul>
+                        </div>
+                        <input class="form-checkout-top__item email" type="email" name="email" placeholder="Ваш e-mail">
+                        <input class="form-checkout-top__item name" type="text" name="name" placeholder="Ваше имя">
                     </div>
 
                     <div class="form-checkout-bottom">
@@ -139,13 +181,14 @@
                                 </span>
                                 <span class="form-checkout-range-top__progress">75 %</span>
                             </div>
-                            <input class="form-checkout-range__range" type="range" name="range">
+                            <input class="form-checkout-range__range" min="0" max="100" step="1" value="75" type="range" name="range">
                         </div>
 
                         <div class="wrapper-attach-file">
-                            <input type="file" name="file">
+                            <input class="form-attach-file" type="file" name="file">
                             <div class="attach-file-text">
-                                <img src="/src/public/icon/attach-file.svg" alt="прикрепить файл">
+                                <img class="attach-file-icon" src="/src/public/icon/attach-file.svg"
+                                    alt="прикрепить файл">
                                 прикрепить файл
                             </div>
                         </div>
