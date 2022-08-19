@@ -1,0 +1,186 @@
+.section-coaching {
+  background-image: url("../img/loreamIpsumBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-coaching .container-coaching {
+  padding-top: 205px;
+  padding-bottom: 247px;
+}
+@media (max-width: 1200px) {
+  .section-coaching .container-coaching {
+    padding-top: 175px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 650px) {
+  .section-coaching .container-coaching {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 140px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .section-coaching .container-coaching {
+    padding-top: 110px;
+    padding-bottom: 40px;
+  }
+}
+.section-coaching__title {
+  font-family: "Lato-Bold";
+  max-width: 780px;
+  font-size: 48px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #000;
+}
+@media (max-width: 650px) {
+  .section-coaching__title {
+    text-align: center;
+    font-size: 33px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 450px) {
+  .section-coaching__title {
+    font-size: 21px;
+    line-height: 24px;
+  }
+}
+.section-coaching__title .highlighted-text-blue {
+  color: #3E9CDC;
+  font-family: "Lato-Bold";
+}
+.section-coaching .coaching-suggestions {
+  margin-top: 92px;
+}
+@media (max-width: 650px) {
+  .section-coaching .coaching-suggestions {
+    margin-top: 52px;
+  }
+}
+@media (max-width: 450px) {
+  .section-coaching .coaching-suggestions {
+    margin-top: 32px;
+  }
+}
+.section-coaching .coaching-suggestions__title {
+  font-family: "Lato-Bold";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 12px;
+}
+@media (max-width: 650px) {
+  .section-coaching .coaching-suggestions__title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+.section-coaching .coaching-suggestions .coaching-suggestions-list {
+  margin-top: 13px;
+}
+.section-coaching .coaching-suggestions .coaching-suggestions-list__item {
+  display: flex;
+  font-family: "Lato-Light";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+}
+@media (max-width: 650px) {
+  .section-coaching .coaching-suggestions .coaching-suggestions-list__item {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 450px) {
+  .section-coaching .coaching-suggestions .coaching-suggestions-list__item {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+.section-coaching .coaching-suggestions .coaching-suggestions-list__item::before {
+  content: "-";
+  display: inline-block;
+  padding-left: 11px;
+  padding-right: 11px;
+  width: 4.94px;
+  height: 1.51px;
+}
+.section-coaching .coaching-suggestions .coaching-suggestions-list__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.section-coaching .user-interaction-buttons {
+  display: flex;
+  margin-top: 80px;
+}
+@media (max-width: 650px) {
+  .section-coaching .user-interaction-buttons {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 450px) {
+  .section-coaching .user-interaction-buttons {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+}
+.section-coaching .user-interaction-buttons .user-interaction-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 183px;
+  height: 43px;
+  font-family: "Lato-Medium";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
+}
+@media (max-width: 650px) {
+  .section-coaching .user-interaction-buttons .user-interaction-button {
+    width: 163px;
+    height: 37px;
+  }
+}
+@media (max-width: 450px) {
+  .section-coaching .user-interaction-buttons .user-interaction-button {
+    width: 155px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
+.section-coaching .user-interaction-buttons .user-interaction-button.order {
+  margin-right: 30px;
+  background-color: #3E9CDC;
+  border: 1px solid #fff;
+  color: #fff;
+}
+@media (max-width: 450px) {
+  .section-coaching .user-interaction-buttons .user-interaction-button.order {
+    margin-right: 0;
+  }
+}
+.section-coaching .user-interaction-buttons .user-interaction-button.order:hover {
+  background-color: #2588cc;
+}
+.section-coaching .user-interaction-buttons .user-interaction-button.more {
+  background-color: #fff;
+  border: 1px solid #6F6D7B;
+  color: #2A2B30;
+}
+@media (max-width: 450px) {
+  .section-coaching .user-interaction-buttons .user-interaction-button.more {
+    margin-top: 10px;
+  }
+}
+.section-coaching .user-interaction-buttons .user-interaction-button.more:hover {
+  box-shadow: 0 0 5px;
+}

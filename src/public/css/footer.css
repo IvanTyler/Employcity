@@ -1,0 +1,127 @@
+.footer {
+  background-color: #3D4050;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media (max-width: 470px) {
+  .footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+.footer__all-rights-reserved {
+  font-family: "Lato-Medium";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+}
+@media (max-width: 470px) {
+  .footer__all-rights-reserved {
+    font-size: 11px;
+    line-height: 14px;
+  }
+}
+.footer .container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+@media (max-width: 1170px) {
+  .footer .container-footer {
+    flex-direction: column;
+  }
+}
+.footer .footer-payment-systems-list {
+  display: flex;
+}
+.footer .footer-payment-systems-list__item {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+.footer .footer-payment-systems-list__item:first-child {
+  border-left: solid 1px #c3c3c3;
+}
+@media (max-width: 1170px) {
+  .footer .footer-payment-systems-list__item:first-child {
+    padding-left: 0;
+    border-left: none;
+  }
+}
+@media (max-width: 470px) {
+  .footer .footer-payment-systems-list__item {
+    padding-left: 15px;
+  }
+}
+.footer .footer-payment-systems-list__text {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+}
+@media (max-width: 470px) {
+  .footer .footer-payment-systems-list__text {
+    font-size: 11px;
+    line-height: 14px;
+  }
+}
+.footer .footer-social-networks {
+  display: flex;
+}
+.footer .footer-social-networks__item {
+  display: flex;
+  align-items: center;
+  padding-left: 37px;
+}
+.footer .footer-social-networks__item:first-child {
+  border-left: solid 1px #c3c3c3;
+}
+@media (max-width: 1170px) {
+  .footer .footer-social-networks__item:first-child {
+    padding-left: 0;
+    border-left: none;
+  }
+}
+@media (max-width: 470px) {
+  .footer .footer-social-networks__item {
+    padding-left: 15px;
+  }
+}
+.footer .footer-social-networks__link {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+}
+@media (max-width: 470px) {
+  .footer .footer-social-networks__link {
+    font-size: 11px;
+    line-height: 14px;
+  }
+}
+.footer .footer-social-networks__text {
+  margin-left: 10px;
+}
+@media (max-width: 1170px) {
+  .footer__all-rights-reserved,
+.footer .footer-payment-systems-list,
+.footer .footer-social-networks {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 470px) {
+  .footer__all-rights-reserved,
+.footer .footer-payment-systems-list,
+.footer .footer-social-networks {
+    margin-top: 15px;
+  }
+}
+.footer__all-rights-reserved {
+  margin-top: 0;
+}

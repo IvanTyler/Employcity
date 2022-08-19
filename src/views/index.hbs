@@ -68,7 +68,7 @@
                 <ul class="scheme-work-list">
                     <li class="scheme-work-list__item">
                         <div class="wrapper-circle">
-                            <div class="circle">
+                            <div class="circle circle-animate">
                                 <img src="/icon/icon-scheme-work/icon-scheme-work-сonsecteturadipiscing-elit.svg" alt=""
                                     class="icon-scheme">
                             </div>
@@ -151,14 +151,14 @@
                     </li>
                 </ul>
 
-                <form action="" class="form-checkout">
+                <form action="" name="checkoutForm" class="form-checkout">
                     <div class="form-checkout-top">
                         <div class="form-checkout-top__item select-type-system">
                             <span class="select-type-system__type">Выберите тип системы</span>
                             <ul class="select-type-system-list"></ul>
                         </div>
-                        <input class="form-checkout-top__item email" type="email" name="email" placeholder="Ваш e-mail">
-                        <input class="form-checkout-top__item name" type="text" name="name" placeholder="Ваше имя">
+                        <input class="form-checkout-top__item email" id="emailForm" minlength="8" maxlength="30" type="email" name="email" placeholder="Ваш e-mail">
+                        <input class="form-checkout-top__item name" id="nameForm" minlength="8" maxlength="30" type="text" name="name" placeholder="Ваше имя">
                     </div>
 
                     <div class="form-checkout-bottom">
@@ -174,9 +174,9 @@
                         </div>
 
                         <div class="wrapper-attach-file">
-                            <input class="form-attach-file" type="file" name="file">
-                            <div class="attach-file-text">
-                                <img class="attach-file-icon" src="/icon/attach-file.svg" alt="прикрепить файл">
+                            <input class="wrapper-attach-file__file" type="file" name="file">
+                            <div class="wrapper-attach-file__text">
+                                <img class="wrapper-attach-file__icon" src="/icon/attach-file.svg" alt="прикрепить файл">
                                 прикрепить файл
                             </div>
                         </div>

@@ -1,0 +1,134 @@
+$var-transition: 0.2s;
+
+$var-mainFont: 'Lato-Medium';
+$var-mainFontBold: 'Lato-Bold';
+$var-mainFontLight: 'Lato-Light';
+
+.footer {
+    background-color: #3D4050;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media (max-width: 470px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    &__all-rights-reserved {
+        font-family: $var-mainFont;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #fff;
+
+        @media (max-width: 470px) {
+            font-size: 11px;
+            line-height: 14px;
+        }
+    }
+
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        @media (max-width: 1170px) {
+            flex-direction: column;
+        }
+    }
+
+    .footer-payment-systems-list {
+        display: flex;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            padding-left: 40px;
+
+            &:first-child {
+                border-left: solid 1px #c3c3c3;
+
+                @media (max-width: 1170px) {
+                    padding-left: 0;
+                    border-left: none;
+                }
+            }
+
+            @media (max-width: 470px) {
+                padding-left: 15px;
+            }
+        }
+
+        &__text {
+            display: inline-block;
+            margin-left: 10px;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            color: #fff;
+
+            @media (max-width: 470px) {
+                font-size: 11px;
+                line-height: 14px;
+            }
+        }
+    }
+
+    .footer-social-networks {
+        display: flex;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            padding-left: 37px;
+
+            &:first-child {
+                border-left: solid 1px #c3c3c3;
+
+                @media (max-width: 1170px) {
+                    padding-left: 0;
+                    border-left: none;
+                }
+            }
+
+            @media (max-width: 470px) {
+                padding-left: 15px;
+            }
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            color: #fff;
+
+            @media (max-width: 470px) {
+                font-size: 11px;
+                line-height: 14px;
+            }
+        }
+
+        &__text {
+            margin-left: 10px;
+        }
+    }
+
+    &__all-rights-reserved,
+    .footer-payment-systems-list,
+    .footer-social-networks {
+        @media (max-width: 1170px) {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 470px) {
+            margin-top: 15px;
+        }
+    }
+
+    &__all-rights-reserved {
+        margin-top: 0;
+    }
+}
