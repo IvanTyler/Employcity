@@ -80,7 +80,7 @@ $checkoutForm.addEventListener('submit', (event) => {
     }
 })
 
-setInterval(() => {
+setInterval(function () {
     for (let i = 0; i < $circleAllElemets.length; i++) {
         if ($circleAllElemets[i].classList.contains('circle-animate')) {
             $circleAllElemets[i].classList.remove('circle-animate');
