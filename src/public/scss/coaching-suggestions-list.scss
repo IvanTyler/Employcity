@@ -1,0 +1,27 @@
+.coaching-suggestions-list {
+    display: grid;
+    gap: 8px;
+    margin-top: 13px;
+
+    &__item {
+        display: flex;
+        font-family: var(--font-mainLight);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+
+        @media (max-width: 650px) {
+            font-size: 17px;
+            line-height: 20px;
+        }
+
+        &::before {
+            content: '-';
+            display: inline-block;
+            padding-left: 11px;
+            padding-right: 11px;
+            width: 4.94px;
+            height: 1.51px;
+        }
+    }
+}

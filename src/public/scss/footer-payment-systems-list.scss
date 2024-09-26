@@ -1,0 +1,36 @@
+.footer-payment-systems-list {
+    display: flex;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+
+        &:first-child {
+            border-left: solid 1px #c3c3c3;
+
+            @media (max-width: 1170px) {
+                padding-left: 0;
+                border-left: none;
+            }
+        }
+
+        @media (max-width: 470px) {
+            padding-left: 15px;
+        }
+    }
+
+    &__text {
+        display: inline-block;
+        margin-left: 10px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #fff;
+
+        @media (max-width: 470px) {
+            font-size: 11px;
+            line-height: 14px;
+        }
+    }
+}

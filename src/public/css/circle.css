@@ -1,0 +1,38 @@
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #3E9CDC;
+  border: 5px solid #286690;
+}
+@media (max-width: 1230px) {
+  .circle {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media (max-width: 1230px) {
+  .circle .icon-scheme {
+    width: 40%;
+  }
+}
+
+.circle.circle-animate {
+  animation: circle 4s infinite;
+}
+@keyframes circle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

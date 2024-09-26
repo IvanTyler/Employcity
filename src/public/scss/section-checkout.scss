@@ -1,0 +1,35 @@
+.section-checkout {
+    background-image: url('../img/maps-BG.png'), linear-gradient(to right, #282834, #282834);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .container-checkout {
+        padding-top: clamp(50px, 5vw, 88px);
+        padding-bottom: clamp(50px, 5vw, 150px);
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: 800;
+        font-family: var(--font-mainBold);
+        font-size: clamp(24px, 5vw, 36px);
+        line-height: clamp(27px, 5vw, 43px);
+        color: #fff;
+        text-transform: uppercase;
+
+        .highlighted-text-blue {
+            color: var(--color-main);
+            font-family: var(--font-mainBold);
+        }
+    }
+
+    &__sub-title {
+        text-align: center;
+        margin-top: clamp(15px, 5vw, 32px);
+        font-family: var(--font-main);
+        font-weight: 400;
+        font-size: clamp(15px, 4vw, 18px);
+        line-height: clamp(18px, 4vw, 21px);
+        color: #BBBBBB;
+    }
+}

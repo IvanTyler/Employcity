@@ -1,0 +1,55 @@
+.form-checkout-top {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    &__item {
+        padding-right: 28px;
+        height: 48px;
+        background: rgba(255, 255, 255, 0.85);
+        border: 1px solid #fff;
+        border-radius: 3px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &:not(:first-child) {
+            &::placeholder {
+                font-family: var(--font-main);
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                color: #272733;
+
+                @media (max-width: 600px) {
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+
+    input[type=email].email,
+    input[type=text].name {
+        padding-left: 10px;
+        font-family: var(--font-main);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #272733;
+
+        @media (max-width: 600px) {
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+
+    input[type=email].email.error,
+    input[type=text].name.error {
+        border: solid red 1px;
+
+        &::placeholder {
+            color: red;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+
+.header-nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: clamp(20px, 4vw, 60px);
+
+    &__link {
+        color: #fff;
+        font-family: var(--font-main);
+        text-transform: uppercase;
+        font-size: clamp(10px, 2vw, 13px);
+        line-height: 16px;
+        transition: var(--transition);
+
+        &:hover {
+            color: var(--color-main);
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.footer-payment-systems-list {
+  display: flex;
+}
+.footer-payment-systems-list__item {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+.footer-payment-systems-list__item:first-child {
+  border-left: solid 1px #c3c3c3;
+}
+@media (max-width: 1170px) {
+  .footer-payment-systems-list__item:first-child {
+    padding-left: 0;
+    border-left: none;
+  }
+}
+@media (max-width: 470px) {
+  .footer-payment-systems-list__item {
+    padding-left: 15px;
+  }
+}
+.footer-payment-systems-list__text {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+}
+@media (max-width: 470px) {
+  .footer-payment-systems-list__text {
+    font-size: 11px;
+    line-height: 14px;
+  }
+}

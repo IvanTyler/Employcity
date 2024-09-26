@@ -1,0 +1,25 @@
+.section-coaching {
+    background-image: url('../img/loreamIpsumBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container-coaching {
+        padding-top: clamp(120px, 15vw, 205px);
+        padding-bottom: clamp(40px, 5vw, 247px);
+    }
+
+    &__title {
+        font-family: var(--font-mainBold);
+        max-width: 780px;
+        font-size: clamp(21px, 5vw, 48px);
+        line-height: clamp(24px, 5vw, 51px);
+        text-transform: uppercase;
+        color: #000;
+
+        .highlighted-text-blue {
+            color: var(--color-main);
+            font-family: var(--font-mainBold);
+        }
+    }
+
+}

@@ -1,0 +1,51 @@
+.footer {
+    background-color: #3D4050;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media (max-width: 470px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    &__all-rights-reserved {
+        font-family: var(--font-main);
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #fff;
+
+        @media (max-width: 470px) {
+            font-size: 11px;
+            line-height: 14px;
+        }
+    }
+
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        @media (max-width: 1170px) {
+            flex-direction: column;
+        }
+    }
+
+
+    &__all-rights-reserved,
+    .footer-payment-systems-list,
+    .footer-social-networks {
+        @media (max-width: 1170px) {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 470px) {
+            margin-top: 15px;
+        }
+    }
+
+    &__all-rights-reserved {
+        margin-top: 0;
+    }
+}

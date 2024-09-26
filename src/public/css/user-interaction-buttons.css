@@ -1,0 +1,37 @@
+.user-interaction-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 183px));
+  gap: clamp(15px, 5vw, 30px);
+  margin-top: clamp(30px, 5vw, 80px);
+}
+.user-interaction-buttons .user-interaction-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: clamp(30px, 5vw, 43px);
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.user-interaction-buttons .user-interaction-button.order {
+  background-color: #3E9CDC;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.user-interaction-buttons .user-interaction-button.order:hover {
+  background-color: #2588cc;
+}
+.user-interaction-buttons .user-interaction-button.more {
+  background-color: #fff;
+  border: 1px solid #6F6D7B;
+  color: #2A2B30;
+}
+.user-interaction-buttons .user-interaction-button.more:hover {
+  box-shadow: 0 0 5px;
+}

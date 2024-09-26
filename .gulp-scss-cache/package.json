@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.54.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "gulp": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "hbs": "^4.2.0"
+  },
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

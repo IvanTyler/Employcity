@@ -1,0 +1,10 @@
+.coaching-suggestions {
+  margin-top: clamp(32px, 5vw, 92px);
+}
+.coaching-suggestions__title {
+  font-family: var(--font-mainBold);
+  font-weight: 700;
+  font-size: clamp(17px, 5vw, 20px);
+  line-height: clamp(20px, 5vw, 23px);
+  margin-bottom: 12px;
+}

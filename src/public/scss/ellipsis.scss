@@ -1,0 +1,19 @@
+.ellipsis {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: -12px;
+    transform: translateX(100%);
+    top: calc(50% - 3px);
+
+    @media (max-width: 1230px) {
+        display: none;
+    }
+
+    &__item {
+        width: 6px;
+        height: 6px;
+        background-color: #c4c4c4;
+        border-radius: 50%;
+    }
+}
